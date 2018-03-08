@@ -53,7 +53,7 @@ RUN service postgresql start && \
     service postgresql stop
 
 EXPOSE 5432
-EXPOSE 8080
+EXPOSE 8185
 
 COPY start.sh /app/start.sh
 CMD /app/start.sh
