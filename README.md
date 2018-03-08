@@ -28,12 +28,12 @@ If a different country should be used you can set `PBF_DATA` on build.
 2. Modify Dockerfile, set your url for PBF
 
   ```
-  ENV PBF_DATA http://download.geofabrik.de/europe/monaco-latest.osm.pbf
+  ENV PBF_DATA http://download.geofabrik.de/asia/myanmar-latest.osm.pbf
   ```
 3. Configure incrimental update. By default CONST_Replication_Url configured for Monaco.
 If you want a different update source, you will need to declare `CONST_Replication_Url` in local.php. Documentation [here] (https://github.com/openstreetmap/Nominatim/blob/master/docs/Import-and-Update.md#updates). For example, to use the daily country extracts diffs for Gemany from geofabrik add the following:
   ```
-  @define('CONST_Replication_Url', 'http://download.geofabrik.de/europe/germany-updates');
+  @define('CONST_Replication_Url', 'http://download.geofabrik.de/asia/myanmar-updates');
   ```
 
 4. Build 
@@ -44,18 +44,18 @@ If you want a different update source, you will need to declare `CONST_Replicati
 5. Run
 
   ```
-  docker run --restart=always -d -p 8080:8080 --name nominatim-monacco nominatim
+  docker run --restart=always -d -p 8185:8185 --name nominatim-myanmar nominatim
   ```
-  If this succeeds, open [http://localhost:8080/](http:/localhost:8080) in a web browser
+  If this succeeds, open [http://localhost:8185/](http:/localhost:8185) in a web browser
 
 # Running
 
 You can run Docker image from docker hub.
 
 ```
-docker run --restart=always -d -p 8080:8080 --name nominatim mediagis/nominatim:latest
+docker run --restart=always -d -p 8185:8185 --name nominatim mediagis/nominatim:latest
 ```
-Service will run on [http://localhost:8080/](http:/localhost:8080)
+Service will run on [http://localhost:8185/](http:/localhost:8185)
 
 # Update
 
