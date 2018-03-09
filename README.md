@@ -43,6 +43,8 @@ If you want a different update source, you will need to declare `CONST_Replicati
   ```
 5. Run
 
+Enable firewall, `sudo ufw allow 8185` if not yet so.
+
   ```
   docker run --restart=always -d -p 8185:8185 --name nominatim-myanmar nominatim
   ```
