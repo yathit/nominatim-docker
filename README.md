@@ -23,7 +23,7 @@ If a different country should be used you can set `PBF_DATA` on build.
 
   ```
   # git clone git@github.com:mediagis/nominatim-docker.git
-  # cd nominatim-docker/2.5
+  # cd nominatim-docker/3.0
   ```
 
 2. Modify Dockerfile, set your url for PBF
