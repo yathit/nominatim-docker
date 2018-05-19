@@ -26,7 +26,7 @@ If a different country should be used you can set `PBF_DATA` on build.
   # cd nominatim-docker/3.0
   ```
 
-2. Modify Dockerfile, set your url for PBF
+2. Modify Dockerfile, set your url for PBF (No need, updated in this repo)
 
   ```
   ENV PBF_DATA http://download.geofabrik.de/asia/myanmar-latest.osm.pbf
